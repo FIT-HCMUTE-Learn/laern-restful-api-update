@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class UserService {
@@ -17,7 +18,7 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User findById(int id){
+    public Optional<User> findOne(Integer id){
         return userRepository.findById(id);
     }
 
@@ -25,7 +26,7 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public User deleteById(int id){
-        return userRepository.deleteById(id);
+    public void deleteById(Integer id){
+        userRepository.deleteById(id);
     }
 }

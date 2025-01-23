@@ -1,0 +1,6 @@
+INSERT INTO User VALUES(1, SYSDATE(), "Join");
+INSERT INTO User VALUES(2, SYSDATE(), "Atom");
+INSERT INTO User VALUES(3, SYSDATE(), "Lucy");
+
+INSERT INTO Post VALUES(1, "My First Post", 1);
+INSERT INTO Post VALUES(2, "My Second Post", 1);
